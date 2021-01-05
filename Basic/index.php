@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firas Fendri PHP</title>
+<title>Firas fendri16b819c3</title>
+<?php require_once "bootstrap.php"; ?>
 </head>
 <body>
-    <h1>firas fendri php</h1>
-    <p>the SHA256 of "firas fendri" is:</p>
-    <?php print hash('sha256', 'Charles Severance');
-    $name= $a['name'] ?? 'not found';
-    ?>
-    <pre>
-    ######                                           
-    #        
-    #####    
-    #   
-    #          
-    #
-    </pre>
-    <a href="check.php">Click here to check the error setting</a>
-<br>
-<a href="fail.php">Click here to cause a traceback</a>
+<div class="container">
+<h1>Welcome to Broken Rock Paper Scissors</h1>
+<p><strong>Note:</strong> This sample code is only
+partially done and serves only as a starting point for the assignment.
+</p>
+<p>
+<a href="login.php">Please Log In</a>
+</p>
+<p>
+Attempt to go to 
+<a href="game.php">game.php</a> without logging in - it should fail with an error message.
+<p>
+<a href="http://www.wa4e.com/code/rps.zip"
+ target="_blank">Source Code for this Application</a>
+</p>
+</div>
 </body>
-</html>
+
