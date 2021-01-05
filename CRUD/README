@@ -1,1 +1,14 @@
+because when you wirk with prepare and every time ther is a new input 
+Pdo will check and correct any missunderstanding
 
+
+ERROR_MODE8EXCEPTION: when it blwo up it dies and do not continue exucutting
+
+
+prepare and exucute put theme always in a try/catch
+
+the best usage of errors is to print a simple msg for 
+the user and make a file names "error4.php" where u put all errors
+
+// for security we dont use query ---> fetch 
+we use prepare --->execute
