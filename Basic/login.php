@@ -1,8 +1,11 @@
 <?php // Do not put any HTML above this line
-
+ini_set('display_errors',1);
+ini_set('log_errors',1);
+ini_set('error_log',dirname(__FILE__) . '/log.txt');
+error_reporting(E_ALL);
 if ( isset($_POST['cancel'] ) ) {
     // Redirect the browser to game.php
-    header("Location: index3.php");
+    header("Location: index.php");
     return;
 }
 
@@ -15,14 +18,19 @@ $failure = false;  // If we have no POST data
 if ( isset($_POST['who']) && isset($_POST['pass']) ) {
     if ( strlen($_POST['who']) < 1 || strlen($_POST['pass']) < 1 ) {
         $failure = "User name and password are required";
-    } else {
+    } 
+    if(!strpos($_POST['who'], '@')){
+        $failure = "Email must have an at-sign (@)";
+    }else {
         $check = hash('md5', $salt.$_POST['pass']);
         if ( $check == $stored_hash ) {
-            // Redirect the browser to game.php
-            header("Location: game.php?name=".urlencode($_POST['who']));
+            // Redirect the browser to autos.php
+            error_log("Login success ".$_POST['who']);
+            header("Location: autos.php?name=".urlencode($_POST['who']));
             return;
         } else {
             $failure = "Incorrect password";
+            error_log("Login fail ".$_POST['who']." $check");
         }
     }
 }
@@ -33,7 +41,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 <html>
 <head>
 <?php require_once "bootstrap.php"; ?>
-<title>Chuck Severance's Login Page</title>
+<title>Firas fendr8277f4b5</title>
 </head>
 <body>
 <div class="container">

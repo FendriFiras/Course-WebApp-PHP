@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Firas fendri16b819c3</title>
+<title>Firas fendr8277f4b5</title>
 <?php require_once "bootstrap.php"; ?>
 </head>
 <body>
 <div class="container">
-<h1>Welcome to Broken Rock Paper Scissors</h1>
-<p><strong>Note:</strong> This sample code is only
-partially done and serves only as a starting point for the assignment.
-</p>
+<h1>Welcome to Autos Database</h1>
+
 <p>
 <a href="login.php">Please Log In</a>
 </p>
 <p>
 Attempt to go to 
-<a href="game.php">game.php</a> without logging in - it should fail with an error message.
+<a href="autos.php">autos.php</a> without logging in - it should fail with an error message.
 <p>
-<a href="http://www.wa4e.com/code/rps.zip"
- target="_blank">Source Code for this Application</a>
+<a href="https://www.wa4e.com/assn/autosdb/"
+ target="_blank">Specification for this Application</a>
 </p>
+<p><strong>Note:</strong> Your implementation should retain data across multiple logout/login sessions. This sample implementation clears all its data on logout - which you should not do in your implementation.</p>
 </div>
 </body>
 
