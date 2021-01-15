@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //we dont have a key word called class
+        function PartyAnimal(){
+            this.x=0;
+            this.party=function (){
+                this.x=this.x +1;
+                console.log("so far"+this.x);
+            }
+        }
+        a1 = new PartyAnimal();
+        a1.party();
+        a1.party();
+        a1.party();
+        a1.party();
+        
+        function animal(nam){
+            this.x =0;
+            this.name=nam;
+            console.log("buildiong"+name);
+            this.party=function (){
+                this.x=this.x +1;
+                console.log(nam+"="+this.x);
+            }
+        }
+        s=new animal("firas");
+        s.party();
+        e=new animal("kais");
+        e.party();
+        s.party();
+    </script>
+</body>
+</html>

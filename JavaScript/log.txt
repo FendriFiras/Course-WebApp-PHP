@@ -33,3 +33,16 @@
 [15-Jan-2021 01:25:08 Europe/Berlin] Login success umsi@umich.edu
 [15-Jan-2021 01:25:29 Europe/Berlin] Login success umsi@umich.edu
 [15-Jan-2021 16:29:26 Europe/Berlin] Login success firasfendri@yahoo.fr
+[15-Jan-2021 16:35:01 Europe/Berlin] Login success firasfendri@yahoo.fr
+[15-Jan-2021 17:10:44 Europe/Berlin] Login success firasfendri@yahoo.fr
+[15-Jan-2021 17:10:44 Europe/Berlin] PHP Notice:  Undefined index: user_id in C:\xampp\htdocs\Building Web app (Coursera)\JavaScript\login.php on line 33
+[15-Jan-2021 17:10:50 Europe/Berlin] Login success firasfendri@yahoo.fr
+[15-Jan-2021 17:10:50 Europe/Berlin] PHP Notice:  Undefined index: user_id in C:\xampp\htdocs\Building Web app (Coursera)\JavaScript\login.php on line 33
+[15-Jan-2021 17:11:17 Europe/Berlin] Login success firasfendri@yahoo.fr
+[15-Jan-2021 17:11:17 Europe/Berlin] PHP Notice:  Undefined index: user_id in C:\xampp\htdocs\Building Web app (Coursera)\JavaScript\login.php on line 33
+[15-Jan-2021 17:22:25 Europe/Berlin] PHP Notice:  Undefined variable: pdo in C:\xampp\htdocs\Building Web app (Coursera)\JavaScript\login.php on line 22
+[15-Jan-2021 17:22:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\Building Web app (Coursera)\JavaScript\login.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Building Web app (Coursera)\JavaScript\login.php on line 22
+[15-Jan-2021 17:22:58 Europe/Berlin] Login fail firasfendri@yahoo.fr 1a52e17fa899cf40fb04cfc42e6352f1
