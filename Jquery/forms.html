@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <h1>Jquery autoecho</h1>
+    <!-- letting jquery to talk to server (without refreching the screen or request respond cycle) -->
+    <form id="form">
+        <input type="text" name="one" value="hello there">
+        <img src="Spin-1s-200px.gif"   id="spinner" width="25px" style="display: none;">
+    </form> 
+    <hr>
+    <div id="resultat"></div>
+    <hr>
+    <script type="text/javascript">
+        //change function wait for any modification to start excucution
+        $('#form').change(function (event) { 
+            event.preventDefault();
+            $('#spinner').show();//first we show the spinner (loading)
+            var form = $('#form');
+            var txt = form.find('input[name="one"]').val();//retreving value from the input named one
+            console.log("sending POST");//the console is for verification
+            $.post('autoecho.php',{'val':txt},function(data){
+                //data is where the retrived data from autoecho.php wil be stored 
+                console.log("data retrived succesfuly"+data);
+                $('#resultat').empty().append(data);//pushing the retrived data into the div section
+                $('#spinner').hide();//hiding the spinner
+            }).error ( function(){
+                console.log("error in retriving data");
+            });
+
+            return false;
+        });
+    </script>
+</body>
+</html>
